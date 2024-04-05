@@ -131,6 +131,11 @@ class AdaptiveCard implements CardInterface
     // Getters
     // -------------------------------------------------------------------------
 
+    public function getSummary(): string
+    {
+        return $this->summary;
+    }
+
     public function getMessage(): array
     {
         $card = [
